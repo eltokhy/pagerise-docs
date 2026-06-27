@@ -1,0 +1,68 @@
+---
+title: AI Visibility
+description: Measure whether AI assistants — ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot — cite a site, with per-query verdicts, citations, and referrers.
+---
+
+**Track → AI Visibility** scores how likely AI assistants are to surface and cite
+a site, and tracks the traffic they send. It's the AI-search counterpart to
+[Search Insights](/docs/guides-track/search-insights).
+
+## What it measures
+
+When you run an audit, Pagerise probes a set of high-intent queries across five
+engines — **ChatGPT, Perplexity, Google AI Overviews, Gemini, and Copilot** — and
+produces an **AI Visibility score (0–100)** from:
+
+- **Query coverage** — how many queries the brand is surfaced for.
+- **Engine coverage** — how dominant it is on its strongest AI channel.
+- **Schema** — structured-data signals AI engines use to extract answers.
+- **Citations** — presence on authority directories AI engines trust.
+- **Local signals** — NAP, hours, and local context.
+
+The audit also returns an executive summary and prioritized findings (a playbook
+of what to fix next).
+
+## The three drill-downs
+
+- **Verdicts** — a per-query, per-engine matrix: for each query, was the brand
+  **found / weak / miss** on each engine, with the reasoning.
+- **Citations** — the authority directories detected vs. missing (the citation
+  gap to close).
+- **Referrers** — real GA4 traffic arriving from AI assistants (ChatGPT,
+  Perplexity, Claude, Gemini, Copilot, …).
+
+## How to lift it
+
+<Steps>
+<Step>
+### Unblock AI crawlers
+Make sure robots.txt doesn't block GPTBot/ClaudeBot/PerplexityBot — check
+[Site Health → Robots](/docs/guides-track/site-health).
+</Step>
+<Step>
+### Ship schema + local signals
+Add LocalBusiness/Service/FAQ schema and consistent NAP. Bulk-generate service-area
+pages with [Local Pages](/docs/guides-run/local-pages).
+</Step>
+<Step>
+### Close the citation gap
+Get listed on the authority directories the Citations view flags as missing.
+</Step>
+<Step>
+### Publish depth
+Cover the high-intent queries that came back **weak/miss** with focused content.
+</Step>
+</Steps>
+
+<Callout type="info">
+  For a deeper one-off analysis (citability, brand mentions, llms.txt), run the
+  **AI Visibility Skill** — see [Skills](/docs/guides-run/skills).
+</Callout>
+
+## Related
+
+<Cards>
+  <Card title="Local Pages" href="/docs/guides-run/local-pages" description="Schema-rich local pages built for AI answers." />
+  <Card title="AI-visibility reports" href="/docs/guides-report/reports" description="Share the score with clients." />
+  <Card title="Playbook: improve AI visibility" href="/docs/playbooks/improve-ai-visibility" description="A full worked plan." />
+</Cards>

@@ -1,0 +1,43 @@
+---
+title: Troubleshooting
+description: Fixes for the most common issues.
+---
+
+## My fixes / edits aren't reflected in the audit
+
+Audits and On-Page read the **latest crawl snapshot**. Re-crawl the site after
+shipping changes so scores and [Tasks](/docs/guides-run/overview-and-tasks) update.
+
+## Search Insights is empty
+
+It needs **Google Search Console** connected, and GSC data lags ~2 days. Connect
+GSC in [Settings → Integrations](/docs/settings/integrations) and check back.
+
+## A published page is missing its schema
+
+Schema is delivered through the WordPress plugin (post meta → `wp_head`), not the
+post body — WordPress strips inline `<script>` for non-`unfiltered_html` users.
+Confirm the plugin is connected and healthy in
+[Integrations](/docs/settings/integrations).
+
+## AI assistants aren't citing the site
+
+Start with [Site Health → Robots](/docs/guides-track/site-health) — blocked AI
+crawlers stop everything. Then work the
+[Improve AI visibility](/docs/playbooks/improve-ai-visibility) playbook.
+
+## Local Pages are stuck in "Needs review"
+
+That's the thin-content / near-duplicate guard. Make the flagged pages more
+distinct (vary the copy, add location-specific detail) — they can't publish until
+they pass. See [Local Pages](/docs/guides-run/local-pages).
+
+## A background job seems stuck
+
+Most jobs finish in seconds to minutes. If one looks stuck, give it a few minutes;
+sets/runs that are interrupted by a restart are reconciled automatically.
+
+<Callout type="info">
+  Still stuck? Contact support from inside the app — include the site and the
+  approximate time so we can find the job.
+</Callout>

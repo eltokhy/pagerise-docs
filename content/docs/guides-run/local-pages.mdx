@@ -1,0 +1,70 @@
+---
+title: Local Pages
+description: Generate bulk service × location landing pages engineered for local AI search — LocalBusiness schema, NAP, and a thin-content guard.
+---
+
+**Run → Local Pages** generates a matrix of **service × location** landing pages
+in bulk — "everything the business offers, everywhere it offers it" — each built
+for local search and AI answers. It's Pagerise's take on programmatic local SEO.
+
+## Why it exists
+
+Local AI search rewards depth and structured local signals: businesses with local
+schema, consistent name/address/phone (NAP), and pages for each service-area get
+crawled and cited far more often. Local Pages produces those pages at scale
+without hand-building each one.
+
+## How a page set works
+
+<Steps>
+<Step>
+### Define the matrix
+Open **New page set** and enter the business name, market, a list of **services**,
+and a list of **locations** (plus optional NAP). The wizard previews the count —
+services × locations — capped at 200 pages per run.
+</Step>
+<Step>
+### Generate
+Each cell (`{service} in {location}`) is written by the content pipeline, grounded
+in the client's [Brain](/docs/guides-run/brain) and tone, with internal links.
+Every page gets a **LocalBusiness + Service (+ FAQ)** schema graph and the NAP.
+</Step>
+<Step>
+### Review
+Open the set to see each page's status. A built-in **thin-content / near-duplicate
+guard** flags pages that read as too similar or too thin — those land in
+**Needs review** and are held back from publishing.
+</Step>
+<Step>
+### Publish
+Publish the clean (ready) pages to WordPress. Schema is delivered via the plugin
+so it ships on the live page (not stripped from the body).
+</Step>
+</Steps>
+
+## The thin-content guard
+
+Bulk pages risk tripping "doorway page" spam heuristics. Pagerise scores each
+generated page for word count, uniqueness, and similarity to its siblings;
+anything that looks thin or near-duplicate is marked **Needs review** and cannot
+be published until revised. This keeps a large set from harming the site.
+
+<Callout type="info">
+  Local Pages live on their own surface — they don't flood the normal Content
+  command center, and they're reported as a separate "local pages published"
+  figure in monthly reports.
+</Callout>
+
+## Tips
+
+- Keep service and location lists tight and genuinely distinct — quality over
+  raw count.
+- Fill in NAP so the LocalBusiness schema is complete (phone + address improve
+  local eligibility).
+
+## Related
+
+<Cards>
+  <Card title="AI Visibility" href="/docs/guides-track/ai-visibility" description="Measure whether AI engines cite the site." />
+  <Card title="Content" href="/docs/guides-run/content" description="The editorial content lifecycle." />
+</Cards>

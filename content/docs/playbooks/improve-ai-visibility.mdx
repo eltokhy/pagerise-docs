@@ -1,0 +1,47 @@
+---
+title: Improve AI visibility
+description: A worked plan to lift a site's AI-visibility score — audit, fix the highest-leverage signals, then re-measure.
+---
+
+This playbook raises how often AI assistants cite a site. It follows the same
+levers the [AI Visibility](/docs/guides-track/ai-visibility) audit scores.
+
+<Steps>
+<Step>
+### Audit & baseline
+Run the AI Visibility audit. Note the score breakdown — query coverage, engine
+coverage, schema, citations, local signals — and read the findings.
+</Step>
+<Step>
+### Unblock AI crawlers
+In [Site Health → Robots](/docs/guides-track/site-health), confirm GPTBot,
+ClaudeBot, PerplexityBot, Google-Extended, etc. aren't blocked. If they are,
+nothing else matters — fix this first.
+</Step>
+<Step>
+### Ship schema + local signals
+Add LocalBusiness/Service/FAQ schema and consistent NAP. For local businesses,
+bulk-generate service-area pages with [Local Pages](/docs/guides-run/local-pages),
+which carry that schema by default.
+</Step>
+<Step>
+### Close the citation gap
+Use the **Citations** view to see which authority directories are missing, and get
+the brand listed there.
+</Step>
+<Step>
+### Publish depth for weak queries
+For queries that came back **weak/miss**, publish focused
+[content](/docs/guides-run/content) that answers them directly.
+</Step>
+<Step>
+### Re-crawl & re-measure
+Crawl again and re-run the audit. Compare the new score and per-engine verdicts to
+your baseline; report the movement.
+</Step>
+</Steps>
+
+<Callout type="info">
+  These levers compound — schema + local pages + citations + depth together move
+  the score far more than any one alone.
+</Callout>

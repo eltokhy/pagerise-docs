@@ -1,0 +1,43 @@
+---
+title: Run your first crawl & audit
+description: Trigger a crawl, understand what it captures, and turn the audit into a prioritized Tasks list.
+---
+
+A crawl is the engine behind most of Pagerise. Run one, then let the audit turn
+the results into a prioritized to-do list.
+
+## Trigger a crawl
+
+From the site's **Overview** (or **Settings → Crawl**), start a crawl. It runs as
+a background job; you'll see progress and a notification when it finishes. Crawl
+depth, speed, and include/exclude rules are configurable in
+[Settings → Crawl](/docs/settings/site-settings).
+
+## What a crawl captures
+
+For every page it reaches, the crawl records the URL and status code, title and
+meta description, headings, canonical and robots directives, the internal link
+graph, images, and any structured data (JSON-LD). That **snapshot** is what every
+audit reads from.
+
+## Read the audit
+
+Once the crawl completes, the audit evaluates pages against Pagerise's rule set
+and produces:
+
+- **Site Health gauge** (on Overview) — a single score with category breakdowns.
+- **Tasks** (Run → Tasks) — every issue and opportunity, prioritized by severity,
+  many with one-click fixes you can apply to WordPress.
+
+<Callout type="info">
+  Re-crawl after you ship fixes — audits read the latest snapshot, so a fresh
+  crawl is how the score and Tasks reflect your work.
+</Callout>
+
+## Where to go next
+
+<Cards>
+  <Card title="Overview & Tasks" href="/docs/guides-run/overview-and-tasks" description="The fix-it console for a site." />
+  <Card title="Site Health" href="/docs/guides-track/site-health" description="Indexation, performance, and structure audits." />
+  <Card title="On-Page" href="/docs/guides-track/on-page" description="Titles, meta, headings, images, links." />
+</Cards>

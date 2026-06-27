@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+/* Pagerise brand accent — drives links, active nav, and primary buttons.
+   Tune to the exact brand hex when finalized. */
+:root {
+  --color-fd-primary: #7c3aed;
+}
+.dark {
+  --color-fd-primary: #a78bfa;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html > body[data-scroll-locked] {
+  margin-right: 0px !important;
+  --removed-body-scroll-bar-size: 0px !important;
+}

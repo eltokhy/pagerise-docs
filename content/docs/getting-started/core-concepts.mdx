@@ -1,0 +1,55 @@
+---
+title: Core concepts
+description: Workspaces, clients, sites, crawls, jobs, the Brain, and Skills — the handful of ideas the rest of Pagerise builds on.
+---
+
+A few concepts show up everywhere in Pagerise. Learn these once and the rest of
+the app reads naturally.
+
+## Workspace, client, site
+
+- **Workspace (organization)** — your agency account. Holds billing, team
+  members, and all clients.
+- **Client** — a business you do work for. A client can have one or more sites.
+- **Site** — a single website (domain). Almost all tools operate at the site
+  level: crawls, content, audits, rankings, AI visibility, and reports all belong
+  to a site.
+
+## Crawls & snapshots
+
+A **crawl** fetches a site's pages so Pagerise can analyze them. Each crawl
+produces a **snapshot** — a point-in-time copy of the pages, their metadata,
+links, and structured data. Audits, On-Page checks, Links, and AI-visibility
+signals all read from the latest snapshot, so a fresh crawl powers fresh results.
+
+## Jobs
+
+Long-running work (crawling, publishing, generating content, running an audit)
+runs as a background **job** so the UI never blocks. You'll see jobs progress on a
+site's Overview and in notifications; most finish in seconds to a few minutes.
+
+## The Brain
+
+The **Brain** is a per-client (and workspace-wide) knowledge base — your real
+expertise, methodology, results, and brand facts. Pagerise injects relevant Brain
+documents into content generation so drafts reflect the client's true E-E-A-T
+(Experience, Expertise, Authoritativeness, Trust) instead of generic filler.
+
+## Skills
+
+**Skills** are one-click AI tasks you run on a site — an AI-visibility audit, a
+content-optimization pass, a competitor gap analysis, and more. Each Skill reads
+the latest crawl, does its analysis, and returns scored findings.
+
+## AI visibility
+
+Beyond Google rankings, Pagerise measures whether **AI assistants** cite the site.
+It scores citability, brand mentions, schema, crawler access (robots/llms.txt),
+and per-query verdicts across ChatGPT, Perplexity, Google AIO, Gemini, and
+Copilot. See [AI Visibility](/docs/guides-track/ai-visibility).
+
+## Plans & quota
+
+Some tools (deeper keyword research, link suggestions, index monitoring) are on
+higher plans, and AI actions draw from your workspace quota. See
+[Plans & limits](/docs/reference/plans-and-limits).
